@@ -37,13 +37,14 @@ describe('Test flatten() functionality', function() {
         });
     });
 
-    it('string items in array converted to integer', function() {
+    it('string number in array have to return Exception', function(done) {
         var input = [[1,'2',[3]],4];
-        var output = flatten(input);
-
-        [1,2,3,4].forEach(function(item, idx) {
-            item.should.equal(output[idx]);
-        });
+        try {
+            flatten(input);
+        } catch(err) {
+            err.message.should.equal('Only integers required, item (2) is string');
+            done();
+        }
     });
 
     it('empty string in nested arrays have to return Exception', function(done) {

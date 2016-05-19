@@ -8,7 +8,7 @@ var flatten = function flatten(input, predicate) {
                 error.item = item;
                 throw error;
             }
-            result.push(parseInt(item, 10));
+            result.push(item);
         }
         return result;
     }, []);
@@ -17,7 +17,7 @@ var flatten = function flatten(input, predicate) {
 var flattenIntegers = function(input) {
     var isInt = function(x) {
         var y = parseInt(x, 10);
-        return !isNaN(y) && x == y && x.toString() == y.toString();
+        return !isNaN(y) && x == y && x.toString() == y.toString() && typeof x == typeof y;
     };
     try {
         return flatten(input, isInt);
