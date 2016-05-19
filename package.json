@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "main": "main.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dilan/intercom.git"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "should": "8.3.2"
+  },
+  "scripts": {
+    "test": "mocha -b tests/*.spec.js"
+  }
+}

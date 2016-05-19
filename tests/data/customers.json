@@ -1,0 +1,6 @@
+[
+  {"id":206,"name":"Tom Cruise","location":{"latitude":34.092809,"longitude":-118.328661,"city":"Hollywood, USA"}},
+  {"id":307,"name":"Obama Michelle","location":{"latitude":38.907192,"longitude":-77.036871,"city":"Washington DC, USA"}},
+  {"id":103,"name":"Anton P.","location":{"latitude":53.3123364,"longitude":-6.2340747,"city":"Dublin"}},
+  {"id":101,"name":"John Smith","location":{"latitude":53.3397495,"longitude":-6.2598024,"city":"Dublin"}}
+]
