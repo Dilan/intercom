@@ -21,9 +21,13 @@ matching customers (within 100km), sorted by user id (ascending).
 
     $ node shell/flatten.js "[1,2,[3,[4]]]"
 
-# launch task 2 as CLI
+# launch task 2 as CLI (JSON input)
 
     $ node shell/customers.js "tests/data/customers.json"
+
+# launch task 2 as CLI (invalid JSON input)
+
+    $ node shell/txt-to-customers.js "tests/data/customers.txt"
 
 # test all
 
